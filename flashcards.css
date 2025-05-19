@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/Roboto.ttf);
+}
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #593694;
+    padding-left: 6rem;
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+}
+nav {
+    padding-right: 6rem;
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+}
+li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #FBB33B;
+    padding: 1rem;
+}
+
+.learning {
+    height: 100vh;
+}
+.flashcard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    transition: transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+}
+.flashcard {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 45rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 25%;
+}
+.flashcard-background1 {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 46rem;
+    height: 26rem;
+    rotate: 3deg;
+    position: absolute;
+    top: 25%;
+}
+.flashcard-background2 {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 46rem;
+    height: 26rem;
+    rotate: -2deg;
+    position: absolute;
+    top: 25%;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.turn {
+    background-color: #593694;
+    color: #FBB33B;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 12rem;
+    margin-right: 2rem;
+}
+.next {
+    background-color: #FBB33B;
+    color: #593694;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 12rem;
+    margin-left: 2rem;
+}
+
+.animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.ru-vokabel {
+    transition: transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+    border: #593694 solid 3px;
+    transform: rotateY(180deg);
+}
+
+.de-vokabel {
+    transition: transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+    border: #FBB33B solid 3px;
+    backface-visibility: hidden;
+}
+

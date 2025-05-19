@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karteikarten</title>
+    <link rel="stylesheet" href="flashcards.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo" onclick="location.href='index.html'">Kyrilla</div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="flashcards.html">Karteikarten</a></li>
+                <li><a href="">Impressum</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="learning">
+        <div class="flashcard-container">
+            <div class="flashcard-background1"></div>
+            <div class="flashcard-background2"></div>
+            <div class="animation-container">
+                <div class="flashcard ru-vokabel">-</div>  
+                <div class="flashcard de-vokabel">-</div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button class="turn" onclick="turn()">Umdrehen</button>
+            <button class="next" onclick="next()">Nächste Karte</button>
+        </div>
+    </div>
+
+    <script src="flashcards.js"></script>
+</body>
+
+</html>
